@@ -1,0 +1,120 @@
+{
+  "theme": "LIGHT",
+  "archetype": "Organic & Earthy with High-Contrast Emergency Accents",
+  "brand_identity": {
+    "tone": "Urgent, Trustworthy, Professional, Life-saving",
+    "description": "RaktaSetu AI is an emergency blood and donor intelligence network. It must feel like a serious health platform, prioritizing clarity and rapid action over generic SaaS aesthetics. The design uses high-contrast typography, structural grayscale, and deep crimson accents to drive attention to critical actions."
+  },
+  "colors": {
+    "background": {
+      "primary": "#FBFBFA",
+      "secondary": "#F3F3F1",
+      "tertiary": "#EBEBE9"
+    },
+    "text": {
+      "primary": "#111111",
+      "secondary": "#4B4B4B",
+      "tertiary": "#737373",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#B91C1C",
+      "primary_hover": "#991B1B",
+      "primary_light": "#FEE2E2",
+      "pulse": "#DC2626"
+    },
+    "status": {
+      "urgent": "#DC2626",
+      "warning": "#F59E0B",
+      "success": "#059669",
+      "info": "#2563EB"
+    },
+    "border": {
+      "default": "#E5E5E5",
+      "subtle": "#F0F0F0",
+      "urgent": "#FECACA"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk",
+      "body": "Manrope",
+      "mono": "JetBrains Mono"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-tight font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-[#4B4B4B]",
+      "small": "text-sm leading-normal text-[#737373]",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-[#B91C1C]"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing with Structured Density. Use 'Control Room' grid for the dashboard (dense, clear data correlation) and 'Bento' or 'Swiss Grid' for the Proof of Work / Landing pages (asymmetrical, breathing room).",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing_scale": "Tailwind standard. Emphasize p-6, p-8, p-12 for containers.",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 or gap-6. Use h-full for children.",
+    "borders": "Flat solid surfaces. Avoid soft UI everywhere. Mix soft ambient shadows with sharp 1px borders (border-[#E5E5E5]) to ground components."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#B91C1C] text-white hover:bg-[#991B1B] font-medium rounded-md px-6 py-3 transition-colors shadow-sm",
+      "secondary": "bg-white text-[#111111] border border-[#E5E5E5] hover:bg-[#F3F3F1] font-medium rounded-md px-6 py-3 transition-colors",
+      "urgent_pulse": "relative bg-[#DC2626] text-white hover:bg-[#B91C1C] rounded-md px-6 py-3 font-medium transition-colors shadow-[0_0_15px_rgba(220,38,38,0.5)] animate-pulse"
+    },
+    "cards": {
+      "dashboard_widget": "bg-white border border-[#E5E5E5] rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow",
+      "emergency_alert": "bg-[#FEE2E2] border border-[#FECACA] rounded-xl p-6 relative overflow-hidden"
+    },
+    "navigation": {
+      "header": "sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-[#E5E5E5] py-4",
+      "active_link": "text-[#B91C1C] font-semibold",
+      "inactive_link": "text-[#4B4B4B] hover:text-[#111111] transition-colors"
+    },
+    "inputs": {
+      "default": "border border-[#E5E5E5] rounded-md px-4 py-2 focus:ring-2 focus:ring-[#B91C1C] focus:border-transparent outline-none transition-all w-full",
+      "file_upload": "border-2 border-dashed border-[#E5E5E5] rounded-xl p-8 text-center hover:bg-[#F3F3F1] transition-colors cursor-pointer"
+    }
+  },
+  "motion_and_interactions": {
+    "philosophy": "Purposeful, not distracting. Animations should imply speed, processing, and life (pulse).",
+    "hover_states": "-translate-y-[2px] shadow-md transition-all duration-200",
+    "page_transitions": "Fade in with a slight upward translation (staggered for dashboard widgets).",
+    "special_effects": {
+      "heartbeat": "Use a keyframe animation that scales 1 -> 1.05 -> 1 to draw attention to the 'Request Blood Now' CTA.",
+      "ai_processing": "Subtle shimmering gradient mask or scanning line across document upload zones."
+    }
+  },
+  "media_and_assets": {
+    "icons_library": "@phosphor-icons/react",
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1624533358643-7336036c9482?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHJlZCUyMHB1bHNlJTIwZGFya3xlbnwwfHx8fDE3ODIzMjEwMDR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract red pulse dark. Use with a heavy white/gray gradient overlay (e.g., bg-white/90) if placed behind text in light theme, or use purely for the 'Emergency AI Mode' section.",
+        "usage": "Use as a dynamic, textured background for the AI Proof of Work or Emergency Request section."
+      },
+      "trust_human": {
+        "url": "https://images.pexels.com/photos/5206923/pexels-photo-5206923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Doctor holding patient's hands.",
+        "usage": "Use in the 'About the Mission' or 'Trust & Safety' section."
+      },
+      "blood_camp": {
+        "url": "https://images.pexels.com/photos/18523230/pexels-photo-18523230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Person donating blood in a medical setting.",
+        "usage": "Use for the 'Blood Camp Organizer' promotional section or Donor Registration card."
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text against the crimson brand color is pure white. Avoid low-contrast gray text on light gray backgrounds.",
+    "testing_attributes": "All interactive elements (buttons, inputs, tabs) MUST include data-testid attributes (e.g., data-testid='emergency-request-btn')."
+  },
+  "instructions_to_main_agent": {
+    "setup": "Install @phosphor-icons/react and framer-motion. Configure tailwind.config.js with Cabinet Grotesk and Manrope.",
+    "structure": "Build a hybrid app. Route `/` is the marketing/mission page. Route `/emergency` is the AI Request flow. Route `/dashboard` is the Smart Donor Matching & Camp Organizer view. Route `/architecture` is the Proof of Work page.",
+    "component_usage": "Do not build complex dropdowns, selects, or dialogs from scratch. Use Shadcn UI but heavily customize the styling to remove generic SaaS looks—make them match the flat, crisp, organic healthcare theme.",
+    "data_display": "For the donor matching, use dense lists with clear status indicators (Eligible, ETA 15 mins). Use progress bars or ring charts for match scores."
+  }
+}
